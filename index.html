@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Pedra Filosofal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3E51E0 ;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img id="imgnav" src="img/logoescola.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav px-3">
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" href="./src/aluno/validacao.html">Área do Aluno</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" href="./src/pais/validacao.html">Pais/Responsáveis</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" href="#">Financeiro</a>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Instituição
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./src/professor/validacao.html">Professor</a></li>
+                                <li><a class="dropdown-item" href="./src/secretaria/validacao.html">Secretaria</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-100 pt-4 pb-4" id="propaganda">
+        <div class="container">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active d-md-block" data-bs-interval="3000">
+                        <img src="img/Banner1.JPG" class="img-fluid d-block" alt="...">
+                        <h5 class="position-absolute top-50 start-50 translate-middle">Você já leu um livro hoje?</h5>
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Nossos alunos tem aulas diárias sobre literatura.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="img/Banner2.JPG" class="img-fluid d-block" alt="...">
+                        <h5 class="position-absolute top-50 start-50 translate-middle">Você já acessou a internet hoje?
+                        </h5>
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Oferecemos aulas de programação. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Banner3.JPG" class="img-fluid d-block" alt="...">
+                        <h5 class="position-absolute top-50 start-50 translate-middle">Valorizamos a interação!</h5>
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Brincadeiras educativas, interação, diversão...</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+    </section>
+
+    <section class="pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col w-50">
+                    <img src="img/marticula.jpeg.jpg" alt="">
+                </div>
+                <div class="col w-50">
+                    <h3 class="text-center pt-4 fw-bold">Seja bem vindo ao ano letivo 2022!</h3>
+                    <h6 class="px-5 pt-3 text-center matricula">Mais um ano que começa cheio de aventuras e aprendizados
+                        com nossos novos amigos.</h6>
+                    <h4 class="px-5 pt-3 text-center">Faça a sua matrícula clicando abaixo:</h4>
+                    <div class="d-grid gap-2 pt-3">
+                        <button class="btn btn-success fw-bold" type="button">Faça sua Matrícula</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="informativo">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center">Diferenciais</h3>
+                    <img class="diferenciais rounded float-start pb-3" src="img/informacao1.JPG" alt="">
+                    <p class="lh-1">Para aqueles que precisam passar o dia no colégio, oferecemos o período integral.
+                        Sob a supervisão de professores que auxiliam nos estudos diários, esses alunos tem uma rotina
+                        dinâmica e diferenciadas com atividades lúdicas e de socialização, desenvolvimento de projetos
+                        especiais, culinária e oficinas diárias.</p>
+                </div>
+                <div class="col">
+                    <h3 class="text-center text-nowrap">Método de Ensino</h3>
+                    <img class="diferenciais rounded float-start pb-3" src="img/informacao2.JPG" alt="">
+                    <p class="lh-1">“Se não encontrarmos respostas adequadas a todas as questões sobre educação,
+                        continuaremos a forjar almas de escravos em nossos filhos.” (C. Freinet).
+                        A pedagogia Freinet se fundamenta em quatro eixos:
+                        <span class="fw-bold"> Cooperação – Comunicação – Documentação e Afetividade</span>
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-center">Funcionamento</h3>
+                    <img class="diferenciais rounded float-start pb-3" src="img/informacao3.JPG" alt="">
+                    <p class="lh-1"><span class="fw-bold">Manhã:</span> das 7:30 h às 12:00 h (uma vez por semana aula
+                        até 12:50 para a turma de 9º ano)</p>
+                    <p class="lh-1"><span class="fw-bold">Tarde:</span> das 13:00 h às 17:30 h (para alunos de educação
+                        infantil ao 2º ano)</p>
+                    <p class="lh-1"><span class="fw-bold">Integral:</span> das 7:00 h às 19:00 h</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid mt-5" style="background-color: #bed9e4 ;" id="clube">
+        <div class="row">
+            <div class="col w-50 m-5">
+                <h3 class="text-center fw-bold">Clube da Música</h3>
+                <h5 class="text-center lh-2 text-success p-2">A música é uma revelação superior a toda sabedoria e
+                    filosofia.</h4>
+                    <p>Um dos maiores benefícios de aprender um instrumento musical está no fato de colocar o cérebro
+                        para trabalhar. Por mais que existam as atividades diárias, como estudo e trabalho, é muito
+                        importante conseguir tirar um tempo para se dedicar a algo que saia da rotina</p>
+
+                    <p>Os cursos abrangem uma Metodologia moderna, apropriada e com certificados de conclusão em cada
+                        modalidade.</p>
+            </div>
+            <div class="col w-50">
+                <div class="mt-5">
+                    <img class="w-75 mx-auto d-block shadow p-3 mb-5 bg-body rounded" src="img/clubedamusica.jpg" alt=""
+                        srcset="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid px-5" style="background-color: rgb(148, 148, 241);">
+        <div class="row py-4">
+            <div class="col">
+                <h3 class="text-center fw-bold text-dark">2349</h3>
+                <h6 class="text-center text-secondary">Total de Alunos</h6>
+
+            </div>
+            <div class="col">
+                <h3 class="text-center fw-bold text-dark">100%</h3>
+                <h6 class="text-center text-secondary">Percentual de felicidade</h6>
+
+            </div>
+            <div class="col">
+                <h3 class="text-center fw-bold text-dark">74</h3>
+                <h6 class="text-center text-secondary">Equipe profissionais</h6>
+            </div>
+            <div class="col">
+                <h3 class="text-center fw-bold text-dark">2349</h3>
+                <h6 class="text-center text-secondary">Total de Alunos</h6>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="olimpiada">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center">Olimpíadas Científicas</h3>
+                    <img class="mx-auto d-block w-25" src="img/olimpiadas.jpg" alt="" srcset="">
+                    <p class="px-4 pt-3">Incentiva jovens a valorizar o meio cientifico. Aprimorar os estudos e
+                        talentos. Olimpíadas na
+                        escola mudam destinos de campeões. Nós despertamos o desejo de estudar, o interesse precisa
+                        florescer seja na matemática, na musica, na arte ou nas ciências desenvolvemos o todo, mas
+                        descobrindo o potencial de cada um.</p>
+
+                    <h6 class="p-4">Nossos resultados:</h6>
+                    <ul class="ps-5" style="list-style-image: url('img/verifica.png');">
+                        <li class="ps-1">9 medalhas na canguru- Prata e Bronze</li>
+                        <li class="ps-1">2 Finalistas na OPRM entre os 100 melhores do PR</li>
+                        <li class="ps-1">3 melhores do Brasil em fotografia</li>
+                        <li class="ps-1">3 Medalhistas na OMP – Ouro e Prata</li>
+                        <li class="ps-1">75 atletas olímpicos</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img class="mx-auto d-block shadow p-3 mb-5 bg-body rounded " src="img/flderOlimpiada.jpg" alt=""
+                        srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid" style="background-color: #0a156e74" ;>
+            <div class="row">
+                <div class="col-3 pt-4">
+                    <img class="mx-auto d-block w-50 pt-4" src="img/logoescola.png" alt="" srcset="">
+                    <h6 class="text-center pb-3">Escola - Pedra Filosofal</h6>
+                    <p class="fw-bold text-warning ps-4">Nós transformamos os desafios da nova geração em oportunidades
+                        reais</p>
+                    <p class="ps-4">Acreditando que educar é construir juntos, a Pedagogia Freinet se alicerça em quatro
+                        eixos fundamentais: Cooperação, Comunicação, Documentação e Afetividade.</p>
+                </div>
+                <div class="col-3 pt-4">
+                    <h6 class="text-center p-3">Navegue pelo Site</h6>
+                    <ul class="nav flex-column ps-5" style="list-style: none;">
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="#">Área do Aluno</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="#">Pais/Responsáveis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="#">Área do Professor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="#">Secretaria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="#">Financeiro</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 pt-4">
+                    <i class="bi bi-facebook"></i>
+                    <h6 class="text-center p-3">Conheça nossas redes sociais</h6>
+                    <div class="text-center">
+                        <a class="text-light m-3 p-2 bg-light" href="#"><img src="img/facebook.svg" alt=""
+                                srcset=""></a>
+                        <a class="text-light m-3 p-2 bg-light" href="#"><img src="img/instagram.svg" alt=""
+                                srcset=""></a>
+                        <a class="text-light m-3 p-2 bg-light" href="#"><img src="img/linkedin.svg" alt=""
+                                srcset=""></a>
+                    </div>
+                    <h6 class="text-center pt-5">Endereço</h6>
+                    <p class="text-center">R. Professor Pedro Viriato Parigot de Souza, 5300</p>
+                    <p class="text-center">(41) 3333-3333</p>
+                    <div class="text-center"><a  href="#">admin@admin.com.br</a></div>
+                    
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
