@@ -39,4 +39,17 @@ footer p, a{
     max-width: 3em;
 }
 
+.tableid{
+    text-align: center;
+}
+
+.tableStatus{
+    color: green;
+    font-weight: bold;
+}
+
+.tableacoesimg{
+    width: 15%;
+}
+
 
