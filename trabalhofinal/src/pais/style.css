@@ -1,0 +1,7 @@
+#showmateriamatematica, #showmateriaciencias, #shownatacao, #showjudo{
+    display: none;
+}
+
+#showmateriaportugues, #showclubedamusica{
+    display: block;
+}

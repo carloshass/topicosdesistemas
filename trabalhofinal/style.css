@@ -1,0 +1,55 @@
+#propaganda h5,p{
+    color: white;
+}
+
+.navbar-toggler{
+    color: aliceblue;
+}
+
+.matricula{
+    font-family: 'Cookie', cursive;
+    font-size: 2em;
+    color: blue;
+}
+
+#informativo p{
+    color: rgb(87, 75, 75);
+    text-align: justify;
+}
+
+.diferenciais{
+    max-width: 100%;
+}
+
+#clube p{
+    color: rgb(69, 53, 53);
+    text-align: justify;
+}
+
+#olimpiada p, h6{
+    color: rgb(69, 53, 53);
+    text-align: justify;
+}
+
+footer p, a{
+    color: rgb(69, 53, 53);
+}
+
+#imgnav{
+    max-width: 3em;
+}
+
+.tableid{
+    text-align: center;
+}
+
+.tableStatus{
+    color: green;
+    font-weight: bold;
+}
+
+.tableacoesimg{
+    width: 15%;
+}
+
+
