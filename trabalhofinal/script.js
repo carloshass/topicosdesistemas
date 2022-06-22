@@ -62,6 +62,8 @@ class SolicitarDisciplina {
 
         this.listaTabela();
 
+        console.log(this.arrayDisciplinas);
+
     }
 
     listaTabela() {
@@ -132,35 +134,31 @@ class SolicitarDisciplina {
         }
 
     }
+
+    exibir() {
+        let testejson = JSON.stringify(this.arrayDisciplinas);
+        console.log(testejson);
+        }
+
+    exibirPais(testejson){
+        console.log(testejson);
+    }
 }
 
 class bancoDeDados {
 
-constructor(){
-    this.requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
-    this.request = new XMLHttpRequest();
-}
+    constructor() {
+        this.arrayDisciplinas;
+    }
 
-exibir(){
-    this.request.open('GET', requestURL);
-    request.responseType = 'json';
-    request.send();
-    request.onload = function() {
-    var superHeroes = request.response;
-
-    populateHeader(superHeroes);
-    showHeroes(superHeroes);
-}
-}
-
-
-}
+    exibir() {
+        console.log(this.arrayDisciplinas[1]);
+        }
+    }
 
 function materiaportugues() {
 
     let materiashowP = document.getElementById("showmateriaportugues").style.display;
-
-    console.log(showmateriaportugues);
 
     if (materiashowP == "none") {
         document.getElementById("showmateriaportugues").style.display = "block";
@@ -254,5 +252,26 @@ function judo() {
 
 var disciplina = new SolicitarDisciplina;
 var validacao = new validacaoDados;
+var teste = new bancoDeDados;
 
 
+const materiasExtras = [
+    {
+        "aluno" : "João Maria",
+        "clubeDaMusica":{
+            "id": 1,
+            "extra": "Clube da Música",
+            "situacao": true
+        },
+        "natacao":{
+            "id": 2,
+            "extra": "natacao",
+            "situacao": false
+        },
+        "judo":{
+            "id": 3,
+            "extra": "Judô",
+            "situacao": true
+        }
+    }
+]

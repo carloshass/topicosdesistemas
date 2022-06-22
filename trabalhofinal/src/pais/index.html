@@ -16,11 +16,6 @@
     <link rel="stylesheet" href="./style.css">
 
     <script src="../../script.js"></script>
-    <script src="./scriptAluno.js"></script>
-
-    <script>
-        window.onload = validacao.alunoInformacoes();
-    </script>
 
 
     <title>Pedra Filosofal</title>
@@ -51,10 +46,9 @@
     </header>
     <h2 class="text-center pt-4">Área dos Responsáveis</h2>
 
-
-    <section class="container">
+    <section class="container py-4">
         <h3 class="text-center">Calendário Bimestral Geral</h3>
-        <div class="border">
+        <div>
             <div class="row">
                 <div class="col-2">
                     <div class="card" style="width: 12rem;">
@@ -69,26 +63,70 @@
                 </div>
                 <div class="col-4 border-end">
 
-                    <div>
-                        <h4 class="text-center pt-4">Mês de fevereiro</h4>
+                    <div class="p-3">
+                        <select class="form-select mx-auto" aria-label="Default select example" id="calendariomes">
+                            <option value="1">Março</option>
+                            <option value="2">Abril</option>
+                            <option value="3">Maio</option>
+                            <option value="4">Junho</option>
+                        </select>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center pt-3">
-                        <button type="submit" class="btn btn-outline-primary me-md-1">Anterior</button>
-                        <button type="submit" class="btn btn-outline-primary">Próximo</button>
+                        <button type="submit" class="btn btn-outline-primary me-md-1" id="month"
+                            onclick="calendario.listaTabela()">Verificar</button>
                     </div>
-                    <div>
-                        <img class="w-50 pt-4 mx-auto d-grid" src="../../img/logoescola.png" alt="">
-                        <h5 class="text-center">Escola - Pedra Filosofal</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <div>
+                                <img class="w-50 pt-5 mx-auto d-grid " src="../../img/logoescola.png" alt="">
+                                <h6 class="text-center">Escola - Pedra Filosofal</h6>
+                            </div>
+                        </div>
+                        <div class="col-6 pt-2">
+                            <ul class="list-group list-group-flush p-1 rounded">
+                                <li class="list-group-item bg-primary text-nowrap"
+                                    style="font-size: 0.8em; color: white;">Início das aulas</li>
+                                <li class="list-group-item bg-warning text-nowrap mt-1"
+                                    style="font-size: 0.8em; color: black;">Viagem escolar</li>
+                                <li class="list-group-item bg-success text-nowrap mt-1"
+                                    style="font-size: 0.8em; color: white;">Provas</li>
+                                <li class="list-group-item bg-danger text-nowrap mt-1"
+                                    style="font-size: 0.8em; color: white;">Conselho de Classe</li>
+                            </ul>
+                        </div>
+
                     </div>
+
                 </div>
-                <div class="col-6">
-                    <img class="w-75 d-block mx-auto" src="../../img/calendarioTeste.jpg" alt="" srcset="">
-                </div>
+                <div class="col-6 border">
+
+                    <table class="table table-sm">
+                        <thead>
+
+                            <tr class="text-center">
+                                <th>D</th>
+                                <th>S</th>
+                                <th>T</th>
+                                <th>Q</th>
+                                <th>Q</th>
+                                <th>S</th>
+                                <th>S</th>
+                            </tr>
+
+                        </thead>
+                        <tbody id="tbodycalendar" class="text-center pt-2 mx-2" style="font-size: 1.5em;">
+
+
+                        </tbody>
+                    </table>
+
     </section>
 
-    <section class="container pt-4">
+    <hr>
+
+    <section class="container py-4">
         <h3 class="text-center">Consulta às disciplinas/Materiais</h3>
-        <div class="border">
+        <div>
             <div class="row">
                 <div class="col-6 border-end">
                     <h5 class="text-center pt-3">Disciplinas Obrigatórias</h5>
@@ -216,28 +254,28 @@
         </div>
     </section>
 
-    <section class="container pt-4">
-        <h3 class="text-center">Solicitação de Disciplinas Extras</h3>
-        <div class="border">
-            <div class="row p-4">
-                <div class="col-4">
-                    <select class="form-select" aria-label="Default select example" id="disciplinaextra">
-                        <option>Clube da Música</option>
-                        <option>Natação</option>
-                        <option>Judô</option>
-                    </select>
-                </div>
-                <div class="col-2">
-                    <button class="btn btn-success" onclick="disciplina.enviarSolicitacao()">Enviar Solicitacao</button>
-                </div>
-            </div>
+    <hr>
+
+    <section class="container py-4">
+        <h3 class="text-center">Confirmação de Disciplinas Extras</h3>
+        <div>
             <div class="p-4">
+                <div class="row">
+                    <div class="col-8">
+                        <h4 class="text-center pd-4">Disciplinas Solicitadas pelo Aluno</h3>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-warning" onclick="disciplinaAprovar.aprovarSolicitacao()">Consultar
+                            Solicitacões</button>
+                    </div>
+                </div>
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th scope="col-2">Inscrição</th>
+                            <th scope="col-1">Inscrição</th>
                             <th scope="col-3">Disciplina Extra</th>
                             <th scope="col-3">Status</th>
+                            <th scope="col-3">Valor</th>
                             <th scope="col-2">Ações</th>
                         </tr>
                     </thead>
@@ -245,8 +283,45 @@
                     </tbody>
                 </table>
             </div>
+
+            <div class="p-4 text-center">
+                <button class="btn btn-success" onclick="disciplinaAprovar.aprovarTotal()">Aprovar Solicitacões</button>
+            </div>
+        </div>
+
         </div>
     </section>
+
+    <hr>
+
+    <div class="container pt-3">
+        <div class="row">
+            <div class="col-8">
+                <h3 class="text-center">Chat Online</h3>
+                <div>
+                    <div class="row p-4">
+                        <div class="col-8">
+                            <input class="form-control" id="mensagemusuario" type="text" placeholder="Digite sua mensagem..."
+                                aria-label="default input example">
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-success" onclick="chat.interacaoChat()">Enviar Mensagem</button>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <table class="border m-3">
+                            <tbody id="tbodychat">
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
 
     <section class="container pt-4">
         <h3 class="text-center">Consulta às Notas e Faltas</h3>
@@ -258,7 +333,7 @@
                         <button type="submit" class="btn btn-outline-primary" onclick="materiaportugues()"
                             id="portugues">Português</button>
                         <button type="submit" class="btn btn-outline-primary"
-                            onclick="materiamatematica()">Matemática</button>
+                            onclick="disciplina.exibirPais()">Matemática</button>
                         <button type="submit" class="btn btn-outline-primary"
                             onclick="materiaciencias()">Ciências</button>
                     </div>
@@ -342,6 +417,8 @@
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="../../js/bootstrap.min.js"></script>
+    <script src="../aluno/scriptAluno.js"></script>
+    <script src="./script.js"></script>
 
 
 
