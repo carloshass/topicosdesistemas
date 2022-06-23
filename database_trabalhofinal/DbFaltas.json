@@ -1,0 +1,95 @@
+{
+    "João Pedro": [
+        {
+            "Portugues": 2,
+            "Matematica": 2,
+            "Ciencias": 1,
+            "Clube da Musica": 3,
+            "Natacao" : 1
+        }
+    ],
+    "Maria Antonela": [
+        {
+            "Portugues": 1,
+            "Matematica": 2,
+            "Ciencias": 1,
+            "Natacao" : 1,
+            "Judo" : 1
+        }
+    ],
+    "Pedro Ribeiro": [
+        {
+            "Portugues": 2,
+            "Matematica": 0,
+            "Ciencias": 1,
+            "Clube da Musica": 1,
+            "Natacao" : 1,
+            "Judo" : 0
+        }
+    ],
+    "Carlos Varela": [
+        {
+            "Portugues": 2,
+            "Matematica": 0,
+            "Ciencias": 1,
+            "Clube da Musica": 1,
+            "Natacao" : 1
+        }
+    ],
+    "Augusta Filha": [
+        {
+            "Portugues": 2,
+            "Matematica": 2,
+            "Ciencias": 1,
+            "Clube da Musica": 0,
+            "Judo" : 1
+        }
+    ],
+    "João Vitor": [
+        {
+            "Portugues": 1,
+            "Matematica": 2,
+            "Ciencias": 1,
+            "Clube da Musica": 3,
+            "Natacao" : 1
+        }
+    ],
+    "Carol Emilia": [
+        {
+            "Portugues": 2,
+            "Matematica": 0,
+            "Ciencias": 1,
+            "Natacao" : 1,
+            "Judo" : 2
+        }
+    ],
+    "Carmem Miranda": [
+        {
+            "Portugues": 0,
+            "Matematica": 2,
+            "Ciencias": 0,
+            "Clube da Musica": 3,
+            "Natacao" : 1,
+            "Judo" : 0
+        }
+    ],
+    "Maria Silva": [
+        {
+            "Portugues": 2,
+            "Matematica": 0,
+            "Ciencias": 1,
+            "Clube da Musica": 2,
+            "Natacao" : 1
+        }
+    ],
+    "Mateus Conrado": [
+        {
+            "Portugues": 0,
+            "Matematica": 2,
+            "Ciencias": 1,
+            "Clube da Musica": 2,
+            "Judo" : 3
+        }
+    ]
+
+}

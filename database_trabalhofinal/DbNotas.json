@@ -1,0 +1,102 @@
+{
+    "João Pedro": [
+        {
+            "PortuguesN1": 7,
+            "PortuguesN2": 8,
+            "MatematicaN1": 9,
+            "MatematicaN2": 9,
+            "CienciasN1": 8,
+            "CienciasN2": 9
+        }
+    ],
+    "Maria Antonela": [
+        {
+            "PortuguesN1": 8,
+            "PortuguesN2": 8,
+            "MatematicaN1": 10,
+            "MatematicaN2": 9,
+            "CienciasN1": 7,
+            "CienciasN2": 9
+        }
+    ],
+    "Pedro Ribeiro": [
+        {
+            "PortuguesN1": 8,
+            "PortuguesN2": 6,
+            "MatematicaN1": 10,
+            "MatematicaN2": 10,
+            "CienciasN1": 7,
+            "CienciasN2": 9
+        }
+    ],
+    "Carlos Varela": [
+        {
+            "PortuguesN1": 6,
+            "PortuguesN2": 10,
+            "MatematicaN1": 10,
+            "MatematicaN2": 8,
+            "CienciasN1": 10,
+            "CienciasN2": 9
+        }
+    ],
+    "Augusta Filha": [
+        {
+            "PortuguesN1": 8,
+            "PortuguesN2": 6,
+            "MatematicaN1": 10,
+            "MatematicaN2": 9,
+            "CienciasN1": 9,
+            "CienciasN2": 9
+        }
+    ],
+    "João Vitor": [
+        {
+            "PortuguesN1": 8,
+            "PortuguesN2": 9,
+            "MatematicaN1": 8,
+            "MatematicaN2": 10,
+            "CienciasN1": 7,
+            "CienciasN2": 9
+        }
+    ],
+    "Carol Emilia": [
+        {
+            "PortuguesN1": 10,
+            "PortuguesN2": 10,
+            "MatematicaN1": 10,
+            "MatematicaN2": 10,
+            "CienciasN1": 9,
+            "CienciasN2": 9
+        }
+    ],
+    "Carmem Miranda": [
+        {
+            "PortuguesN1": 10,
+            "PortuguesN2": 6,
+            "MatematicaN1": 8,
+            "MatematicaN2": 10,
+            "CienciasN1": 7,
+            "CienciasN2": 8
+        }
+    ],
+    "Maria Silva": [
+        {
+            "PortuguesN1": 8,
+            "PortuguesN2": 6,
+            "MatematicaN1": 8,
+            "MatematicaN2": 8,
+            "CienciasN1": 8,
+            "CienciasN2": 8
+        }
+    ],
+    "Mateus Conrado": [
+        {
+            "PortuguesN1": 10,
+            "PortuguesN2": 9,
+            "MatematicaN1": 10,
+            "MatematicaN2": 10,
+            "CienciasN1": 7,
+            "CienciasN2": 8
+        }
+    ]
+}
