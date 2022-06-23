@@ -1,8 +1,36 @@
-
-    {
-        "nome": "João Pedro",
-        "idade": 8,
-        "turma": 1,
-        "matricula": 12345,
-        "responsável": "Maria das Dores"
-    }
+{
+    "nome": "João Pedro",
+    "idade": 8,
+    "turma": 1,
+    "matricula": 12345,
+    "responsável": "Maria das Dores",
+    "disciplinas": [
+        {
+            "portugues": [
+                {
+                    "nota1": 8,
+                    "nota2": 6,
+                    "faltas": 4
+                }
+            ]
+        },
+        {
+            "matematica": [
+                {
+                    "nota1": 7,
+                    "nota2": 10,
+                    "faltas": 2
+                }
+            ]
+        },
+        {
+            "ciencias": [
+                {
+                    "nota1": 4,
+                    "nota2": 2,
+                    "faltas": 5
+                }
+            ]
+        }
+    ]
+}
