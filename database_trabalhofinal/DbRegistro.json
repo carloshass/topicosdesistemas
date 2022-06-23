@@ -1,35 +1,145 @@
 {
-    "nome": "João Pedro",
-    "idade": 8,
-    "turma": 1,
-    "matricula": 12345,
-    "responsável": "Maria das Dores",
-    "disciplinas": [
+    "alunos": [
         {
-            "portugues": [
-                {
-                    "nota1": 8,
-                    "nota2": 6,
-                    "faltas": 4
-                }
+            "nome": "João Pedro",
+            "idade": 8,
+            "turma": 1,
+            "matricula": 12345,
+            "responsável": "Maria das Dores",
+            "disciplinas": [
+                "Português",
+                "Matemática",
+                "Ciências",
+                "Clube da Música",
+                "Natação"
             ]
         },
         {
-            "matematica": [
-                {
-                    "nota1": 7,
-                    "nota2": 10,
-                    "faltas": 2
-                }
+            "nome": "Maria Antonela",
+            "idade": 9,
+            "turma": 1,
+            "matricula": 12345,
+            "responsável": "Pedro Fagundes",
+            "disciplinas": [
+                "Português",
+                "Matemática",
+                "Ciências",
+                "Judô",
+                "Natação"
             ]
         },
         {
-            "ciencias": [
-                {
-                    "nota1": 4,
-                    "nota2": 2,
-                    "faltas": 5
-                }
+            "nome": "Pedro Ribeiro",
+            "idade": 6,
+            "turma": 1,
+            "matricula": 12345,
+            "responsável": "Carmélia Silva",
+            "disciplinas": [
+                "Português",
+                "Matemática",
+                "Ciências",
+                "Judô",
+                "Natação",
+                "Clube da Música"
+            ]
+        },
+        {
+            "nome": "Carlos Varela",
+            "idade": 8,
+            "turma": 1,
+            "matricula": 12345,
+            "responsável": "José da Silva",
+            "disciplinas": [
+                "Português",
+                "Matemática",
+                "Ciências",
+                "Natação",
+                "Clube da Música"
+            ]
+        },
+        {
+            "nome": "Augusta Filha",
+            "idade": 6,
+            "turma": 1,
+            "matricula": 12345,
+            "responsável": "Maria Antonieta",
+            "disciplinas": [
+                "Português",
+                "Matemática",
+                "Ciências",
+                "Judô",
+                "Clube da Música"
+            ]
+        },
+        {
+            "nome": "João Vitor",
+            "idade": 8,
+            "turma": 2,
+            "matricula": 12345,
+            "responsável": "Izabel da Silva",
+            "disciplinas": [
+                "Português",
+                "Matemática",
+                "Ciências",
+                "Clube da Música",
+                "Natação"
+            ]
+        },
+        {
+            "nome": "Carol Emilia",
+            "idade": 9,
+            "turma": 2,
+            "matricula": 12345,
+            "responsável": "Claudio Carroso",
+            "disciplinas": [
+                "Português",
+                "Matemática",
+                "Ciências",
+                "Judô",
+                "Natação"
+            ]
+        },
+        {
+            "nome": "Carmem Miranda",
+            "idade": 6,
+            "turma": 2,
+            "matricula": 12345,
+            "responsável": "Luciano Pedro",
+            "disciplinas": [
+                "Português",
+                "Matemática",
+                "Ciências",
+                "Judô",
+                "Natação",
+                "Clube da Música"
+            ]
+        },
+        {
+            "nome": "Maria Silva",
+            "idade": 8,
+            "turma": 2,
+            "matricula": 12345,
+            "responsável": "Marcos da Silva",
+            "disciplinas": [
+                "Português",
+                "Matemática",
+                "Ciências",
+                "Natação",
+                "Clube da Música"
+            ]
+        },
+        {
+            "nome": "Mateus Conrado",
+            "idade": 6,
+            "turma": 2,
+            "matricula": 12345,
+            "responsável": "João Pedro",
+            "disciplinas": [
+                "Português",
+                "Matemática",
+                "Ciências",
+                "Judô",
+                "Clube da Música"
             ]
         }
     ]
