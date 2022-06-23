@@ -1,4 +1,4 @@
-[
+
     {
         "nome": "João Pedro",
         "idade": 8,
@@ -33,40 +33,4 @@
                 "faltas": 1
             }
         }
-    },
-    {
-        "nome": "Marcos Abreu",
-        "idade": 9,
-        "turma": 2,
-        "matricula": 12345,
-        "responsável": "José Bonifácio",
-        "disciplinasObrigatorias": {
-            "Português": {
-                "nota1": 2,
-                "nota2": 3,
-                "faltas": 1
-            },
-            "Matemática":{
-                "nota1": 7,
-                "nota2": 6,
-                "faltas": 3
-            },
-            "Ciências": {
-                "nota1": 10,
-                "nota2": 8,
-                "faltas": 1
-            }
-        },
-        "disciplinasExtras":{
-            "clubeDaMusica":{
-                "faltas": 1
-            },
-            "natacao":{
-                "faltas": 2
-            },
-            "judo":{
-                "faltas": 1
-            }
-        }
     }
-]
