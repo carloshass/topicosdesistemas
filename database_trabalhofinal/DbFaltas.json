@@ -1,94 +1,94 @@
 {
-    "João Pedro": [
+    "Faltas": [
         {
             "Portugues": 2,
             "Matematica": 2,
             "Ciencias": 1,
             "Clube da Musica": 3,
-            "Natacao" : 1
-        }
-    ],
-    "Maria Antonela": [
-        {
-            "Portugues": 1,
-            "Matematica": 2,
-            "Ciencias": 1,
-            "Natacao" : 1,
-            "Judo" : 1
-        }
-    ],
-    "Pedro Ribeiro": [
+            "Natacao" : 10,
+            "nome": "João Pedro",
+            "id": 1
+        },
         {
             "Portugues": 2,
-            "Matematica": 0,
-            "Ciencias": 1,
-            "Clube da Musica": 1,
-            "Natacao" : 1,
-            "Judo" : 0
-        }
-    ],
-    "Carlos Varela": [
-        {
-            "Portugues": 2,
-            "Matematica": 0,
-            "Ciencias": 1,
-            "Clube da Musica": 1,
-            "Natacao" : 1
-        }
-    ],
-    "Augusta Filha": [
-        {
-            "Portugues": 2,
-            "Matematica": 2,
-            "Ciencias": 1,
-            "Clube da Musica": 0,
-            "Judo" : 1
-        }
-    ],
-    "João Vitor": [
-        {
-            "Portugues": 1,
             "Matematica": 2,
             "Ciencias": 1,
             "Clube da Musica": 3,
-            "Natacao" : 1
-        }
-    ],
-    "Carol Emilia": [
+            "Natacao" : 10,
+            "nome": "Maria Antonela",
+            "id": 2
+        },
         {
             "Portugues": 2,
-            "Matematica": 0,
-            "Ciencias": 1,
-            "Natacao" : 1,
-            "Judo" : 2
-        }
-    ],
-    "Carmem Miranda": [
-        {
-            "Portugues": 0,
             "Matematica": 2,
-            "Ciencias": 0,
+            "Ciencias": 1,
             "Clube da Musica": 3,
-            "Natacao" : 1,
-            "Judo" : 0
-        }
-    ],
-    "Maria Silva": [
+            "Natacao" : 10,
+            "nome": "Pedro Ribeiro",
+            "id": 3
+        },
         {
             "Portugues": 2,
-            "Matematica": 0,
-            "Ciencias": 1,
-            "Clube da Musica": 2,
-            "Natacao" : 1
-        }
-    ],
-    "Mateus Conrado": [
-        {
-            "Portugues": 0,
             "Matematica": 2,
             "Ciencias": 1,
-            "Clube da Musica": 2,
-            "Judo" : 3
+            "Clube da Musica": 3,
+            "Natacao" : 10,
+            "nome": "Carlos Varela",
+            "id": 4
+        },
+        {
+            "Portugues": 2,
+            "Matematica": 2,
+            "Ciencias": 1,
+            "Clube da Musica": 3,
+            "Natacao" : 10,
+            "nome": "Augusta Filha",
+            "id": 5
+        },
+        {
+            "Portugues": 2,
+            "Matematica": 2,
+            "Ciencias": 1,
+            "Clube da Musica": 3,
+            "Natacao" : 10,
+            "nome": "João Vitor",
+            "id": 6
+        },
+        {
+            "Portugues": 2,
+            "Matematica": 2,
+            "Ciencias": 1,
+            "Clube da Musica": 3,
+            "Natacao" : 10,
+            "nome": "Carol Emilia",
+            "id": 7
+        },
+        {
+            "Portugues": 2,
+            "Matematica": 2,
+            "Ciencias": 1,
+            "Clube da Musica": 3,
+            "Natacao" : 10,
+            "nome": "Carmem Miranda",
+            "id": 8
+        },
+        {
+            "Portugues": 2,
+            "Matematica": 2,
+            "Ciencias": 1,
+            "Clube da Musica": 3,
+            "Natacao" : 10,
+            "nome": "Maria Silva",
+            "id": 9
+        },
+        {
+            "Portugues": 2,
+            "Matematica": 2,
+            "Ciencias": 1,
+            "Clube da Musica": 3,
+            "Natacao" : 10,
+            "nome": "Mateus Conrado",
+            "id": 9
         }
     ]
 
