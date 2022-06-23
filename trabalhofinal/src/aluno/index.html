@@ -37,9 +37,6 @@
                         <li class="nav-item px-3">
                             <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" href="../financeiro/financeiro.html">Financeiro</a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -56,8 +53,8 @@
                     <div class="card" style="width: 12rem;">
                         <img src="../../img/card3x4.jpeg" class="card-img-top" alt="...">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item" id="name">Nome: João Marcos</li>
-                            <li class="list-group-item" id="responsavel">Resp: Maria Julia</li>
+                            <li class="list-group-item" id="name">Nome: João Pedro</li>
+                            <li class="list-group-item" id="responsavel">Resp: Maria das Dores</li>
                             <li class="list-group-item" id="matricula">Mat: 12345</li>
                         </ul>
                     </div>
@@ -74,7 +71,8 @@
                         </select>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center pt-3">
-                        <button type="submit" class="btn btn-outline-primary me-md-1" id="month" onclick="calendario.listaTabela()">Verificar</button>
+                        <button type="submit" class="btn btn-outline-primary me-md-1" id="month"
+                            onclick="calendario.listaTabela()">Verificar</button>
                     </div>
                     <div class="row">
                         <div class="col-6">
@@ -85,18 +83,22 @@
                         </div>
                         <div class="col-6 pt-2">
                             <ul class="list-group list-group-flush p-1 rounded">
-                                <li class="list-group-item bg-primary text-nowrap" style="font-size: 0.8em; color: white;">Início das aulas</li>
-                                <li class="list-group-item bg-warning text-nowrap mt-1" style="font-size: 0.8em; color: black;">Viagem escolar</li>
-                                <li class="list-group-item bg-success text-nowrap mt-1" style="font-size: 0.8em; color: white;">Provas</li>
-                                <li class="list-group-item bg-danger text-nowrap mt-1" style="font-size: 0.8em; color: white;">Conselho de Classe</li>
+                                <li class="list-group-item bg-primary text-nowrap"
+                                    style="font-size: 0.8em; color: white;">Início das aulas</li>
+                                <li class="list-group-item bg-warning text-nowrap mt-1"
+                                    style="font-size: 0.8em; color: black;">Viagem escolar</li>
+                                <li class="list-group-item bg-success text-nowrap mt-1"
+                                    style="font-size: 0.8em; color: white;">Provas</li>
+                                <li class="list-group-item bg-danger text-nowrap mt-1"
+                                    style="font-size: 0.8em; color: white;">Conselho de Classe</li>
                             </ul>
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
                 <div class="col-6 border">
-                    
+
                     <table class="table table-sm">
                         <thead>
 
@@ -112,18 +114,18 @@
 
                         </thead>
                         <tbody id="tbodycalendar" class="text-center pt-2 mx-2" style="font-size: 1.5em;">
-                            
-                           
+
+
                         </tbody>
                     </table>
-                   
+
     </section>
 
     <hr>
 
     <section class="container py-4">
         <h3 class="text-center">Consulta às disciplinas/Materiais</h3>
-        <div >
+        <div>
             <div class="row">
                 <div class="col-6 border-end">
                     <h5 class="text-center pt-3">Disciplinas Obrigatórias</h5>
@@ -294,8 +296,8 @@
                 <div>
                     <div class="row p-4">
                         <div class="col-8">
-                            <input class="form-control" id="mensagemusuario" type="text" placeholder="Digite sua mensagem..."
-                                aria-label="default input example">
+                            <input class="form-control" id="mensagemusuario" type="text"
+                                placeholder="Digite sua mensagem..." aria-label="default input example">
                         </div>
                         <div class="col-4">
                             <button class="btn btn-success" onclick="chat.interacaoChat()">Enviar Mensagem</button>
@@ -323,21 +325,43 @@
                 <div class="col-6 border-end">
                     <h5 class="text-center pt-3">Disciplinas Obrigatórias</h5>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center py-3">
-                        <button type="submit" class="btn btn-outline-primary" onclick="materiaportugues()"
-                            id="portugues">Português</button>
-                        <button type="submit" class="btn btn-outline-primary"
-                            onclick="disciplina.exibir()">Matemática</button>
-                        <button type="submit" class="btn btn-outline-primary"
-                            onclick="materiaciencias()">Ciências</button>
+                        <button type="submit" class="btn btn-outline-primary" onclick="consultaNotas.consultar()"
+                            id="portugues">Consultar Status</button>
+                    </div>
+                    <div>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col-2">Disciplina</th>
+                                    <th scope="col-2">Nota 1</th>
+                                    <th scope="col-3">Nota 2</th>
+                                    <th scope="col-3">Média</th>
+                                    <th scope="col-3">Faltas</th>
+                                    <th scope="col-2">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodynotas">
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div class="col-6">
                     <h5 class="text-center pt-3">DIsciplinas Extras</h5>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center py-3">
-                        <button type="submit" class="btn btn-outline-primary" onclick="clubeDaMusica()">Clube da
-                            Música</button>
-                        <button type="submit" class="btn btn-outline-primary" onclick="natacao()">Natação</button>
-                        <button type="submit" class="btn btn-outline-primary" onclick="judo()">Judô</button>
+                        <button type="submit" class="btn btn-outline-primary" onclick="consultaNotas.consultaExtras()">Consultar Status</button>
+                    </div>
+                    <div>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col-2">Disciplina</th>
+                                    <th scope="col-3">Faltas</th>
+                                    <th scope="col-2">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodynotasExtras">
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

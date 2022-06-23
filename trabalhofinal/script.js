@@ -138,9 +138,9 @@ class SolicitarDisciplina {
     exibir() {
         let testejson = JSON.stringify(this.arrayDisciplinas);
         console.log(testejson);
-        }
+    }
 
-    exibirPais(testejson){
+    exibirPais(testejson) {
         console.log(testejson);
     }
 }
@@ -153,8 +153,8 @@ class bancoDeDados {
 
     exibir() {
         console.log(this.arrayDisciplinas[1]);
-        }
     }
+}
 
 function materiaportugues() {
 
@@ -257,21 +257,22 @@ var teste = new bancoDeDados;
 
 const materiasExtras = [
     {
-        "aluno" : "João Maria",
-        "clubeDaMusica":{
+        "aluno": "João Maria",
+        "clubeDaMusica": {
             "id": 1,
             "extra": "Clube da Música",
             "situacao": true
         },
-        "natacao":{
+        "natacao": {
             "id": 2,
             "extra": "natacao",
             "situacao": false
         },
-        "judo":{
+        "judo": {
             "id": 3,
             "extra": "Judô",
             "situacao": true
         }
     }
 ]
+

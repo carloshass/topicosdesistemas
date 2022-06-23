@@ -13,6 +13,9 @@
 
 
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="../../script.js"></script>
 
 
     <title>Pedra Filosofal</title>
@@ -33,61 +36,63 @@
                         <li class="nav-item px-3">
                             <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" href="../aluno/validacao.html">Área do Aluno</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" href="./validacao.html">Pais/Responsáveis</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link active" href="../financeiro/validacao.html">Financeiro</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <h2 class="text-center pt-4">Financeiro</h2>
 
+    <hr>
 
-    <section>
-        <section>
-            <div class="container-fluid h-custom">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col-md-9 col-lg-6 col-xl-5">
-                        <h4 class="text-center pt-5">Área dos Responsáveis</h4>
-                        <img src="../../img/logoescola.png" class="img-fluid pt-2" alt="..">
-                        <h3 class="text-center">Escola - Pedra Filosofal</h3>
-
-
+    <section class="container py-4">
+        <h3 class="text-center">Confirmação de Disciplinas Extras</h3>
+        <div>
+            <div class="p-4">
+                <div class="row">
+                    <div class="col-8">
+                        <h4 class="text-center pd-4">Disciplinas Solicitadas pelo Aluno</h3>
                     </div>
-                    <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 ">
-                        <form>
-
-                            <div class="form-outline mb-4">
-                                <input type="number" id="usernumber"
-                                    class="form-control form-control-lg" placeholder="Digite a matrícula" />
-                                <label class="form-label" for="form3Example3">Matrícula</label>
-                            </div>
-
-                            <div class="form-outline mb-3">
-                                <input type="password" id="password"
-                                    class="form-control form-control-lg" placeholder="Digite a senha alfabética" />
-                                <label class="form-label" for="form3Example4">Senha</label>
-                            </div>
-
-                            <div class="text-center text-lg-start mt-4 pt-2">
-                                <button type="submit" class="btn btn-primary btn-lg"
-                                    style="padding-left: 2.5rem; padding-right: 2.5rem;"
-                                    onclick="validacao.login()">Login</button>
-                            </div>
-
-                        </form>
+                    <div class="col-4">
+                        <button class="btn btn-warning" onclick="disciplinaConsultar.consultarSolicitacao()">Consultar
+                            Disciplinas</button>
                     </div>
                 </div>
-            </div>
-        </section>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col-1">Inscrição</th>
+                            <th scope="col-3">Disciplinas</th>
+                            <th scope="col-3">Categoria</th>
+                            <th scope="col-3">Status</th>
+                            <th scope="col-2">Valor</th>
+                            <th scope="col-2">Ações</th>
 
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+        </div>
     </section>
+
+    <hr>
+
+    <div class="p-4 text-center">
+        <button class="btn btn-success" onclick="disciplinaConsultar.aprovarTotal()">Emitir Boleto para Pagamento</button>
+    </div>
+   
+    <hr>
+
+    <div>
+
+    </div>
+
 
     <footer class="pt-5">
         <div class="container-fluid" style="background-color: #0a156e74" ;>
@@ -155,7 +160,13 @@
         crossorigin="anonymous"></script>
     <script src="../../js/bootstrap.min.js"></script>
 
-    <script src="../../script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+
+    <script src="../aluno/scriptAluno.js"></script>
+    <script src="./script.js"></script>
+
+
+
 
 </body>
 

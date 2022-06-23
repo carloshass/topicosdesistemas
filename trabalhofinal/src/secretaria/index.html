@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +13,11 @@
 
 
     <link rel="stylesheet" href="../../style.css">
-    
+
 
     <title>Pedra Filosofal</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3E51E0 ;">
@@ -55,6 +57,123 @@
             </div>
         </nav>
     </header>
+
+    <section class="container py-4">
+        <h3 class="text-center">Consulta das Turmas/Alunos</h3>
+        <div>
+            <div class="row p-4">
+                <div class="col-4">
+                    <select class="form-select" aria-label="Default select example" id="turma">
+                        <option>Turma 1</option>
+                        <option>Turma 2</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-success" onclick="clicar()">Consultar</button>
+                </div>
+            </div>
+            <div class="p-4">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col-2">Turma</th>
+                            <th scope="col-3">Nome</th>
+                            <th scope="col-3">Idade</th>
+                            <th scope="col-2">Responsável</th>
+                            <th scope="col-2">Disciplinas</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodydadossecretaria">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="container py-4">
+        <h3 class="text-center">Consulta das Notas</h3>
+        <h5 class="text-center">Disciplinas Obrigatórias</h5>
+        <div>
+            <div class="row p-4">
+                <div class="col-4">
+                    <select class="form-select" aria-label="Default select example" id="aluno">
+                        <option value="1">João Pedro</option>
+                        <option value="2">Maria Antonela</option>
+                        <option value="3">Pedro Ribeiro</option>
+                        <option value="4">Carlos Varela</option>
+                        <option value="5">Augusta Filha</option>
+                        <option value="6">João Vitor</option>
+                        <option value="7">Carol Emilia</option>
+                        <option value="8">Carmem Miranda</option>
+                        <option value="9">Maria Silva</option>
+                        <option value="10">Mateus Conrado</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-success" onclick="consultarNotas()">Consultar</button>
+                </div>
+            </div>
+            <div class="p-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col-2">Disciplina</th>
+                            <th scope="col-3">Nota 01</th>
+                            <th scope="col-3">Nota 02</th>
+                            <th scope="col-2">Média</th>
+                            <th scope="col-2">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodynotassecretaria">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-4">
+        <h3 class="text-center">Consulta das Faltas</h3>
+        <h5 class="text-center">Disciplinas Obrigatórias e Extras</h5>
+        <div>
+            <div class="row p-4">
+                <div class="col-4">
+                    <select class="form-select" aria-label="Default select example" id="aluno1">
+                        <option value="1">João Pedro</option>
+                        <option value="2">Maria Antonela</option>
+                        <option value="3">Pedro Ribeiro</option>
+                        <option value="4">Carlos Varela</option>
+                        <option value="5">Augusta Filha</option>
+                        <option value="6">João Vitor</option>
+                        <option value="7">Carol Emilia</option>
+                        <option value="8">Carmem Miranda</option>
+                        <option value="9">Maria Silva</option>
+                        <option value="10">Mateus Conrado</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-success" onclick="consultarFaltas()">Consultar</button>
+                </div>
+            </div>
+            <div class="p-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col-2">Disciplina</th>
+                            <th scope="col-2">Faltas</th>
+                            <th scope="col-2">Enviar aviso</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyfaltassecretaria">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
 
 
     <footer class="pt-5">
@@ -105,8 +224,8 @@
                     <h6 class="text-center pt-5">Endereço</h6>
                     <p class="text-center">R. Professor Pedro Viriato Parigot de Souza, 5300</p>
                     <p class="text-center">(41) 3333-3333</p>
-                    <div class="text-center"><a  href="#">admin@admin.com.br</a></div>
-                    
+                    <div class="text-center"><a href="#">admin@admin.com.br</a></div>
+
 
                 </div>
             </div>
@@ -124,6 +243,8 @@
     <script src="../../js/bootstrap.min.js"></script>
 
     <script src="../../script.js"></script>
-    
+    <script src="./script.js"></script>
+
 </body>
+
 </html>

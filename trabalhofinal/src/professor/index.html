@@ -55,6 +55,153 @@
             </div>
         </nav>
     </header>
+    <section class="container py-4">
+        <h3 class="text-center">Calendário Bimestral Geral</h3>
+        <div>
+            <div class="row">
+                <div class="col-5 border-end">
+                    <div class="p-3">
+                        <select class="form-select mx-auto" aria-label="Default select example" id="calendariomes">
+                            <option value="1">Março</option>
+                            <option value="2">Abril</option>
+                            <option value="3">Maio</option>
+                            <option value="4">Junho</option>
+                        </select>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center pt-3">
+                        <button type="submit" class="btn btn-outline-primary me-md-1" id="month"
+                            onclick="calendario.listaTabela()">Verificar</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div>
+                                <img class="w-50 pt-5 mx-auto d-grid " src="../../img/logoescola.png" alt="">
+                                <h6 class="text-center">Escola - Pedra Filosofal</h6>
+                            </div>
+                        </div>
+                        <div class="col-6 pt-2">
+                            <ul class="list-group list-group-flush p-1 rounded">
+                                <li class="list-group-item bg-primary text-nowrap"
+                                    style="font-size: 0.8em; color: white;">Início das aulas</li>
+                                <li class="list-group-item bg-warning text-nowrap mt-1"
+                                    style="font-size: 0.8em; color: black;">Viagem escolar</li>
+                                <li class="list-group-item bg-success text-nowrap mt-1"
+                                    style="font-size: 0.8em; color: white;">Provas</li>
+                                <li class="list-group-item bg-danger text-nowrap mt-1"
+                                    style="font-size: 0.8em; color: white;">Conselho de Classe</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-6 border">
+
+                    <table class="table table-sm">
+                        <thead>
+
+                            <tr class="text-center">
+                                <th>D</th>
+                                <th>S</th>
+                                <th>T</th>
+                                <th>Q</th>
+                                <th>Q</th>
+                                <th>S</th>
+                                <th>S</th>
+                            </tr>
+
+                        </thead>
+                        <tbody id="tbodycalendar" class="text-center pt-2 mx-2" style="font-size: 1.5em;">
+
+
+                        </tbody>
+                    </table>
+
+    </section>
+
+    <hr>
+
+    <section class="container py-4">
+        <h3 class="text-center">Consulta das Turmas/Alunos</h3>
+        <div>
+            <div class="row p-4">
+                <div class="col-4">
+                    <select class="form-select" aria-label="Default select example" id="turma">
+                        <option>Turma 1</option>
+                        <option>Turma 2</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-success" onclick="clicar()">Consultar</button>
+                </div>
+            </div>
+            <div class="p-4">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col-2">Turma</th>
+                            <th scope="col-3">Nome</th>
+                            <th scope="col-3">Idade</th>
+                            <th scope="col-2">Responsável</th>
+                            <th scope="col-2">Disciplinas</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodydadossecretaria">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="container py-4">
+        <h3 class="text-center">Lançamento de Faltas</h3>
+        <div>
+            <div class="row p-4">
+                <div class="col-4">
+                    <select class="form-select" aria-label="Default select example" id="aluno">
+                        <option>João Pedro</option>
+                        <option>Maria Antonela</option>
+                        <option>Pedro Ribeiro</option>
+                        <option>Carlos Varela</option>
+                        <option>Augusta Filha</option>
+                        <option>João Vitor</option>
+                        <option>Carol Emilia</option>
+                        <option>Carmem Miranda</option>
+                        <option>Maria Silva</option>
+                        <option>Mateus Conrado</option>
+                    </select>
+                    <select class="form-select mt-3" aria-label="Default select example" id="disciplina">
+                        <option>Português</option>
+                        <option>Matemática</option>
+                        <option>Ciências</option>
+                        <option>Clube da Música</option>
+                        <option>Natação</option>
+                        <option>Judô</option>
+                    </select>
+                    <input class="form-control mt-3" id="faltas" type="text" placeholder="Número de Faltas" aria-label="default input example">
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-success" onclick="faltas.enviarFaltas()">Enviar Solicitacao</button>
+                </div>
+            </div>
+            <div class="p-4">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col-2">Nome</th>
+                            <th scope="col-3">Disciplina</th>
+                            <th scope="col-3">Faltas</th>
+                            <th scope="col-2">Confirmação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyfaltas">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 
 
     <footer class="pt-5">
@@ -124,6 +271,9 @@
     <script src="../../js/bootstrap.min.js"></script>
 
     <script src="../../script.js"></script>
+    <script src="./script.js"></script>
+    <script src="../aluno/scriptAluno.js"></script>
+    <script src="../secretaria/script.js"></script>
     
 </body>
 </html>

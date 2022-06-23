@@ -115,11 +115,183 @@ class AprovarDisciplina {
     }
 }
 
+class ConsultarNotas {
+
+    constructor() {
+        this.id = 1;
+        this.status = "Aprovado!"
+        this.arrayNotas = [];
+    }
+
+    consultar() {
+        this.lerDados();
+
+        this.listaTabela();
+
+
+        console.log(this.arrayNotas);
+
+    }
+
+    consultaExtras(){
+
+        this.lerDadosExtras();
+
+        this.listaTabelaExtras();
+    }
+
+    aprovarTotal() {
+        this.total();
+    }
+
+    listaTabela() {
+        let tbody = document.getElementById('tbodynotas');
+        tbody.innerText = "";
+
+        for (let i = 0; i < this.arrayNotas.length; i++) {
+            let tr = tbody.insertRow();
+
+            let td_disciplinas = tr.insertCell();
+            let td_nota1 = tr.insertCell();
+            let td_nota2 = tr.insertCell();
+            let td_media = tr.insertCell();
+            let td_faltas = tr.insertCell();
+            let td_status = tr.insertCell();
+
+            td_disciplinas.innerText = this.arrayNotas[i].disciplina;
+            td_nota1.innerText = this.arrayNotas[i].Nota01;
+            td_nota2.innerText = this.arrayNotas[i].Nota02;
+            td_media.innerText = this.arrayNotas[i].Media;
+            td_faltas.innerText = this.arrayNotas[i].Faltas;
+            td_status.innerText = this.status;
+
+            // td_id.classList.add('col-2');
+            // td_status.classList.add('col-3');
+            // td_acoes.classList.add('col-2');
+            // td_disciplina.classList.add('col-3');
+
+            // let imgDelete = document.createElement('img');
+            // imgDelete.src = 'img/delete.svg';
+            // imgDelete.classList.add('tableacoesimg');
+            // imgDelete.setAttribute("onclick", "disciplinaAprovar.deletar(" + this.arrayDisciplinas[i].id + ")");
+
+            // td_acoes.appendChild(imgDelete);
+
+            // let imgAprovar = document.createElement('img');
+            // imgAprovar.src = 'img/delete.svg';
+            // imgAprovar.classList.add('tableacoesimg');
+            // imgAprovar.setAttribute("onclick", "disciplinaAprovar.deletar(" + this.arrayDisciplinas[i].id + ")");
+
+            // td_acoes.appendChild(imgAprovar);
+
+
+        }
+    }
+
+    listaTabelaExtras() {
+        let tbody = document.getElementById('tbodynotasExtras');
+        tbody.innerText = "";
+
+        for (let i = 0; i < this.arrayNotas.length; i++) {
+            let tr = tbody.insertRow();
+
+            let td_disciplinas = tr.insertCell();
+            let td_faltas = tr.insertCell();
+            let td_status = tr.insertCell();
+
+            td_disciplinas.innerText = this.arrayNotas[i].disciplina;
+            td_faltas.innerText = this.arrayNotas[i].Faltas;
+            td_status.innerText = this.status;
+
+        }
+    }
+
+    lerDados() {
+        this.arrayNotas = [
+            {
+                id: 1,
+                disciplina: 'Português',
+                Nota01: 9,
+                Nota02: 8,
+                Media: 8.5,
+                Faltas: 2
+
+            },
+            {
+                id: 2,
+                disciplina: 'Matemática',
+                Nota01: 10,
+                Nota02: 8,
+                Media: 9,
+                Faltas: 1
+            },
+            {
+                id: 3,
+                disciplina: 'Ciências',
+                Nota01: 8,
+                Nota02: 8,
+                Media: 8,
+                Faltas: 3
+            }
+        ]
+
+    }
+
+    lerDadosExtras() {
+        this.arrayNotas = [
+            {
+                id: 1,
+                disciplina: 'Clube da Música',
+                Faltas: 2
+
+            },
+            {
+                id: 2,
+                disciplina: 'Natação',
+                Faltas: 1
+            },
+            {
+                id: 3,
+                disciplina: 'Judô',
+                Faltas: 3
+            }
+        ]
+
+    }
+
+    deletar(id) {
+
+        if (confirm('Deseja realmente deletar essa inscrição ' + id + '?')) {
+            let tbody = document.getElementById('tbody');
+            console.log(id);
+
+            for (let i = 0; i < this.arrayDisciplinas.length; i++) {
+                if (this.arrayDisciplinas[i].id == id) {
+                    this.arrayDisciplinas.splice(i, 1);
+                    tbody.deleteRow(i);
+                }
+            }
+        }
+
+    }
+
+    total() {
+        let somaTotal = 0;
+        for (let i = 0; i < this.arrayDisciplinas.length; i++) {
+            somaTotal = this.arrayDisciplinas[i].soma + somaTotal;
+        }
+        console.log(somaTotal);
+
+        alert("O valor total das disciplinas extras ficou de: R$ " + somaTotal + ",00 reais")
+    }
+}
+
 
 
 
 
 var disciplinaAprovar = new AprovarDisciplina;
+var consultaNotas = new ConsultarNotas;
 
 class enviarMensagem {
 
