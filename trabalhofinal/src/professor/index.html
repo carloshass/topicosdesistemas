@@ -12,7 +12,7 @@
 
 
     <link rel="stylesheet" href="../../style.css">
-    
+    <link rel="stylesheet" href="./style.css">
 
     <title>Pedra Filosofal</title>
 </head>
@@ -197,6 +197,56 @@
                         </tr>
                     </thead>
                     <tbody id="tbodyfaltas">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-4">
+        <h3 class="text-center">Lançamento de Notas</h3>
+        <div>
+            <div class="row p-4">
+                <div class="col-4">
+                    <select class="form-select" aria-label="Default select example" id="aluno1">
+                        <option>João Pedro</option>
+                        <option>Maria Antonela</option>
+                        <option>Pedro Ribeiro</option>
+                        <option>Carlos Varela</option>
+                        <option>Augusta Filha</option>
+                        <option>João Vitor</option>
+                        <option>Carol Emilia</option>
+                        <option>Carmem Miranda</option>
+                        <option>Maria Silva</option>
+                        <option>Mateus Conrado</option>
+                    </select>
+                    <select class="form-select mt-3" aria-label="Default select example" id="disciplina1">
+                        <option>Português</option>
+                        <option>Matemática</option>
+                        <option>Ciências</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <input class="form-control" id="nota1" type="text" placeholder="Nota 1° Bimestre" aria-label="default input example">
+                    <input class="form-control mt-3" id="nota2" type="text" placeholder="Nota 2° Bimestre" aria-label="default input example">
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-success mt-4" onclick="notas.enviarNotas()">Enviar Notas</button>
+                </div>
+            </div>
+            <div class="p-4">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col-2">Nome</th>
+                            <th scope="col-3">Disciplina</th>
+                            <th scope="col-3">Nota 1° Bimestre</th>
+                            <th scope="col-3">Nota 2° Bimestre</th>
+                            <th scope="col-2">Média</th>
+                            <th scope="col-2">Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodynotas">
                     </tbody>
                 </table>
             </div>

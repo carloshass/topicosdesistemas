@@ -165,25 +165,6 @@ class ConsultarNotas {
             td_faltas.innerText = this.arrayNotas[i].Faltas;
             td_status.innerText = this.status;
 
-            // td_id.classList.add('col-2');
-            // td_status.classList.add('col-3');
-            // td_acoes.classList.add('col-2');
-            // td_disciplina.classList.add('col-3');
-
-            // let imgDelete = document.createElement('img');
-            // imgDelete.src = 'img/delete.svg';
-            // imgDelete.classList.add('tableacoesimg');
-            // imgDelete.setAttribute("onclick", "disciplinaAprovar.deletar(" + this.arrayDisciplinas[i].id + ")");
-
-            // td_acoes.appendChild(imgDelete);
-
-            // let imgAprovar = document.createElement('img');
-            // imgAprovar.src = 'img/delete.svg';
-            // imgAprovar.classList.add('tableacoesimg');
-            // imgAprovar.setAttribute("onclick", "disciplinaAprovar.deletar(" + this.arrayDisciplinas[i].id + ")");
-
-            // td_acoes.appendChild(imgAprovar);
-
 
         }
     }
